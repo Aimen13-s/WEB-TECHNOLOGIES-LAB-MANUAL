@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 8 – Interactive Elements</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Interactive UI (Version 3)</h1>
+    <p class="tagline">A completely new assignment using JavaScript Event Listeners</p>
+</header>
+
+<!-- SECTION 1: Theme Switcher -->
+<section class="block">
+    <h2>Theme Switcher</h2>
+    <button class="theme-btn" data-theme="light">Light Mode</button>
+    <button class="theme-btn" data-theme="dark">Dark Mode</button>
+    <button class="theme-btn" data-theme="blue">Blue Mode</button>
+</section>
+
+<!-- SECTION 2: Hover Effects -->
+<section class="block">
+    <h2>Hover Effects</h2>
+
+    <div class="hover-box" id="hoverBox">Hover over me!</div>
+
+    <p id="hoverStatus">Status: Not hovered</p>
+</section>
+
+<!-- SECTION 3: Counter Controller -->
+<section class="block">
+    <h2>Counter Controller</h2>
+
+    <div class="counter-display" id="counterVal">0</div>
+
+    <div class="counter-buttons">
+        <button id="increment">Increase</button>
+        <button id="decrement">Decrease</button>
+        <button id="resetCounter">Reset</button>
+    </div>
+</section>
+
+<!-- SECTION 4: Shape Creator -->
+<section class="block">
+    <h2>Shape Creator (Uses <code>this</code>)</h2>
+
+    <div class="shape-area" id="shapeArea"></div>
+
+    <button class="shape-btn" data-shape="circle">Create Circle</button>
+    <button class="shape-btn" data-shape="square">Create Square</button>
+    <button class="shape-btn" data-shape="triangle">Create Triangle</button>
+</section>
+
+<!-- SECTION 5: Text Transformer -->
+<section class="block">
+    <h2>Text Transformer</h2>
+
+    <input id="textInput" placeholder="Type something…">
+    <button id="uppercaseBtn">UPPERCASE</button>
+    <button id="lowercaseBtn">lowercase</button>
+    <button id="reverseBtn">Reverse</button>
+
+    <p class="result">Output: <span id="textResult">...</span></p>
+</section>
+
+<script src="main.js"></script>
+</body>
+</html>
