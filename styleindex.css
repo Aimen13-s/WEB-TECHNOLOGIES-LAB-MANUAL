@@ -1,0 +1,146 @@
+/* ================================
+   GLOBAL / DESKTOP STYLING
+================================ */
+body {
+  background-color: #f7e8d4;  /* changed from antiquewhite */
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;   /* increased padding */
+  min-height: 100vh;
+}
+
+.content {
+  background-color: #ffffff;
+  border-radius: 16px;  /* slightly smoother curve */
+  padding: 35px;        /* more spacing */
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12); /* deeper shadow */
+  max-width: 850px;
+  width: 92%;
+  text-align: center;
+  transition: transform 0.2s ease; /* NEW */
+}
+
+.content:hover {
+  transform: translateY(-3px); /* Page lift animation */
+}
+
+h1, h2, h3, p {
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* ================================
+   TABLE STYLING
+================================ */
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  margin-top: 15px;
+  width: 90%;   /* NEW – better responsive width */
+}
+
+th {
+  background-color: #2d6cdf; /* NEW blue header */
+  color: white;
+}
+
+th, td {
+  padding: 10px 18px; /* increased */
+  border: 2px solid #333; /* darker border */
+  font-size: 15.5px;
+}
+
+tr:nth-child(even) {
+  background-color: #f0f4ff; /* NEW row color */
+}
+
+.desktop-list {
+  text-align: left;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #1a46c7;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #0f2f8a;
+  text-decoration: underline; /* NEW */
+}
+
+
+/* ================================
+   MOBILE VERSION
+================================ */
+.mcontainer {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  body {
+    background-color: #111;   /* darker mobile ui */
+    color: white;
+  }
+
+  .container {
+    display: none;
+  }
+
+  .mcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    min-height: 100vh;
+  }
+
+  .mcontent {
+    background-color: #cce7ff; /* lighter blue */
+    border-radius: 14px;
+    padding: 25px;
+    text-align: center;
+    width: 92%;
+    box-shadow: 0 6px 18px rgba(255, 255, 255, 0.1); /* NEW */
+  }
+
+  .mobile-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px; /* NEW */
+  }
+
+  .mobile-list li {
+    background-color: white;
+    color: #0056b3;
+    padding: 12px;
+    border-radius: 10px;
+    width: 75%;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15); /* NEW */
+    transition: 0.2s ease; /* NEW */
+  }
+
+  .mobile-list li:hover {
+    background-color: #e8f1ff;
+    transform: translateY(-2px); /* hover effect */
+  }
+
+  .mobile-list li:last-child {
+    align-self: center;
+  }
+}
