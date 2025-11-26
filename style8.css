@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background: #fafafa;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.tagline {
+    color: #666;
+}
+
+.block {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.theme-btn {
+    padding: 10px 14px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    background: #444;
+    color: white;
+    border-radius: 6px;
+}
+
+.hover-box {
+    width: 220px;
+    height: 80px;
+    background: #ddd;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.counter-display {
+    font-size: 2.4rem;
+    font-weight: bold;
+    background: #eee;
+    width: 120px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.counter-buttons button {
+    padding: 8px 14px;
+    border: none;
+    background: #3a42ff;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.shape-area {
+    width: 100%;
+    min-height: 150px;
+    border: 2px dashed #bbb;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shape-btn {
+    padding: 10px 16px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #444;
+    color: white;
+    cursor: pointer;
+}
+
+.result {
+    margin-top: 12px;
+    font-size: 1.2rem;
+}
