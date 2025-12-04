@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Records Manager</title>
+    <link rel="stylesheet" href="style10.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <h1 class="title">Student Records Manager</h1>
+
+    <div class="form-box">
+        <h2 id="form-heading">Create Student Record</h2>
+
+        <form id="recordForm">
+            <input type="hidden" id="editIndex">
+
+            <label>Name</label>
+            <input type="text" id="stdName" required>
+
+            <label>Roll Number</label>
+            <input type="text" id="stdRoll" required>
+
+            <label>CGPA</label>
+            <input type="number" id="stdCgpa" step="0.01" min="0" max="4" required>
+
+            <div class="btn-group">
+                <button type="submit" id="submitBtn">Save</button>
+                <button type="button" id="resetBtn" class="cancel">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="options">
+        <input type="text" id="searchBar" placeholder="Search student...">
+        <select id="sorter">
+            <option value="">Sort By</option>
+            <option value="nameAsc">Name ↑</option>
+            <option value="nameDesc">Name ↓</option>
+            <option value="cgpaHigh">CGPA High → Low</option>
+            <option value="cgpaLow">CGPA Low → High</option>
+        </select>
+
+        <label><input type="checkbox" id="topHighlight"> Highlight CGPA ≥ 3.5</label>
+
+        <button id="wipeAll" class="danger">Clear All</button>
+    </div>
+
+    <div class="data-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Roll</th>
+                    <th>CGPA</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="recordBody"></tbody>
+        </table>
+    </div>
+
+</div>
+
+<script src="main10.js"></script>
+</body>
+</html>
