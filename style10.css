@@ -1,0 +1,111 @@
+body{
+    margin:0;
+    font-family: Poppins, Arial, sans-serif;
+    background:#eef2f7;
+}
+
+.wrapper{
+    width:90%;
+    max-width:850px;
+    margin:30px auto;
+    padding:20px;
+    background:#fff;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+.title{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.form-box{
+    background:#f7faff;
+    padding:15px;
+    border-radius:10px;
+}
+
+label{
+    display:block;
+    margin-top:10px;
+}
+
+input, select{
+    width:100%;
+    padding:8px;
+    font-size:14px;
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+
+.btn-group{
+    margin-top:12px;
+    display:flex;
+    gap:10px;
+}
+
+button{
+    padding:10px 15px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    background:#3d6dcc;
+    color:#fff;
+}
+
+button.cancel{
+    background:#ddd;
+    color:#111;
+}
+
+button.danger{
+    background:#d0342c;
+}
+
+.options{
+    margin-top:20px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    align-items:center;
+}
+
+.data-table{
+    margin-top:20px;
+    overflow-x:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th, td{
+    padding:10px;
+    border-bottom:1px solid #ddd;
+}
+
+tr.highlight{
+    background:#d7eaff;
+}
+
+.action-btn{
+    padding:6px 10px;
+    border:none;
+    cursor:pointer;
+    border-radius:6px;
+}
+
+.edit-btn{
+    background:#ed9b30;
+    color:#fff;
+}
+
+.del-btn{
+    background:#e53935;
+    color:#fff;
+}
+
+@media (min-width:700px){
+    #searchBar{ width:250px; }
+}
